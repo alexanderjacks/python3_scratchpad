@@ -15,4 +15,4 @@ _________
 + grading_like_in_school.py
 
 _________
-MIT, 2019 [j4cks](www.j4cks.com)
+MIT, 2019 [j4cks](https://www.j4cks.com)
