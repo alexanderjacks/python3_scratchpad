@@ -1,7 +1,5 @@
-'''
-Lab 5: Random Emoticon Generator
+''' Lab 5: Random Emoticon Generator
 Let's generate emoticons by assembling a randomly choosing a set of eyes, a nose, and a mouth.
-
 ☑ Define a list of eyes
 ☑ Define a list of noses
 ☑ Define a list of mouths
@@ -10,16 +8,15 @@ Let's generate emoticons by assembling a randomly choosing a set of eyes, a nose
 ☑ Randomly pick a mouth
 ☑ Assemble and display the emoticon!
 import random
-
 fruits = ['apple', 'banana', 'pineapple']
 fruit = random.choice(fruits)
 print(fruit)
 Advanced Version 1
-Use a for loop to generate 5 emoticons.
+    Use a for loop to generate 5 emoticons.
 Advanced Version 2
-In a while loop, ask the user if they want another emoticon
+    In a while loop, ask the user if they want another emoticon
 Advanced Version 3
-Ask the user if they want to choose each part of the face. If they do, let the user choose that part of the face. If they don't, randomly generate that part.
+    Ask the user if they want to choose each part of the face. If they do, let the user choose that part of the face. If they don't, randomly generate that part.
 Advanced Version 4
 Let the user choose if they want to make one-line horizontal faces like :-), one-line vertical faces like o_O, or multi-line vertical faces like:
 O O

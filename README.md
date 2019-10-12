@@ -13,6 +13,8 @@ _________
 + gambling-pseudogame.py
 + magic-8-ball.py
 + grading_like_in_school.py
++ emoticon-face-machine.py
++ RPS.py
 
 _________
 MIT, 2019 [j4cks](https://www.j4cks.com)
