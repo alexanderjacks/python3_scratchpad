@@ -85,8 +85,13 @@ while game_on == True:
     print(result_is)
     if input("\nWould you like to play again???\nType 'y', 'Y', 'YES', 'Yes', 'yEs', 'yES', 'yeS', 'YEs' or 'yes'\nto play again. . . ").lower() in ["y","yes"]:
         game_on = True
-        print(f"\nCurrent score is:\nPlayer: {player_score} |> vs <| Computer: {python_score}\n")
+        print(f"\nCurrent score is:\nPlayer: {player_score} > vs < Computer: {python_score}\n")
     else:
         game_on = False
 else:
     print("Thanks for playing against a computer opponent!")
+    print(f"\nF I N A L  S C O R E --> \nPlayer: {player_score}\nComputer: {python_score}\n")
+    if player_score > python_score:
+        print("Great job defeating a computer! 👾")
+    else:
+        print("Guess today will be lucky for you in other ways! ☘️")
