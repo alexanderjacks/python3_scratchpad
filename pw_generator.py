@@ -8,9 +8,11 @@ Advanced Version 2
 Allow the user to choose how many letters, numbers, and punctuation characters they want in their password. Mix everything up using list(), random.shuffle(), and ''.join().
 '''
 import random
-
-counter = 10
-
-while counter > 0:
-    print(f"This is the {counter} time")
-    counter -= 1
+import string
+lowers = string.ascii_lowercase
+uppers = string.ascii_uppercase
+possible_characters = lowers + uppers
+counter = 1
+while counter < 11:
+    print(f"#{counter}: Here's a random lowercase letter: {random.choice(possible_characters)}")
+    counter += 1
