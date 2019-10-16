@@ -44,12 +44,12 @@ python_score = 0
 while game_on == True:
     print("Let's play Rock-Paper-Scissors! 🏔📋✂️\nHere's your input code:\n1 or 'R' or 'r' for ROCK 🏔 \n3 or 'P' or 'p' for PAPER 📋 \n5 or 'S' or 's' for SCISSORS ✂️ \n")
 
-    player_choice = input("Choose your move. . .\n(　｀_ゝ´)  ")
-    if player_choice.lower() in ["r", "1"]:
+    player_choice = input("Choose your move. . .\n(　｀_ゝ´)  ").lower()
+    if player_choice in ["r", "1"]:
         player_move = "🏔"
-    elif player_choice.lower() in ["p", "3"]:
+    elif player_choice in ["p", "3"]:
         player_move = "📋"
-    elif player_choice.lower() in ["s", "5"]:
+    elif player_choice in ["s", "5"]:
         player_move = "✂️"
     else:
         print("You gave a weird input. Please run this script again! (↑ , ⏎ )")
