@@ -13,14 +13,15 @@ lowers = string.ascii_lowercase
 uppers = string.ascii_uppercase
 punctuation = ["!","@","#","$","%","^","&","*","(",")","~","+","{","}","[","]","-","|","`","="]
 possible_characters = lowers + uppers + ''.join(punctuation)
-inprogress_password = []
+inprogress_password = [] # imho variable names can substitute for comments/notes
 
 counter = int(input("How long of a password do you want? Enter a number between 10 and 256."))
+remember_their_choice = counter
 if 10 <= counter <= 256:
     while counter > 0:
         inprogress_password.append(random.choice(possible_characters))
         counter -= 1
     finalized_password = ''.join(inprogress_password)
-    print(f"Here's a randomized, 10-character password (do not use after 1998): {finalized_password}")
+    print(f"Here's a randomized, {remember_their_choice}-character password: {finalized_password}")
 else:
     print("Please try this script again, and enter a number bigger than 10 and smaller than 2^8")
