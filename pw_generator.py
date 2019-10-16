@@ -11,8 +11,16 @@ import random
 import string
 lowers = string.ascii_lowercase
 uppers = string.ascii_uppercase
-possible_characters = lowers + uppers
-counter = 1
-while counter < 11:
-    print(f"#{counter}: Here's a random lowercase letter: {random.choice(possible_characters)}")
-    counter += 1
+punctuation = ["!","@","#","$","%","^","&","*","(",")","~","+"]
+possible_characters = lowers + uppers + ''.join(punctuation)
+inprogress_password = []
+
+counter = int(input("How long of a password do you want? Enter a number between 10 and 256."))
+if 10 <= counter <= 256:
+    while counter > 0:
+        inprogress_password.append(random.choice(possible_characters))
+        counter -= 1
+    finalized_password = ''.join(inprogress_password)
+    print(f"Here's a randomized, 10-character password (do not use after 1998): {finalized_password}")
+else:
+    print("Please try this script again, and enter a number bigger than 10 and smaller than 2^8 + 1")
