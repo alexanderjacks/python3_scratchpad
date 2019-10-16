@@ -11,7 +11,7 @@ import random
 import string
 lowers = string.ascii_lowercase
 uppers = string.ascii_uppercase
-punctuation = ["!","@","#","$","%","^","&","*","(",")","~","+"]
+punctuation = ["!","@","#","$","%","^","&","*","(",")","~","+","{","}","[","]","-","|","`","="]
 possible_characters = lowers + uppers + ''.join(punctuation)
 inprogress_password = []
 
@@ -23,4 +23,4 @@ if 10 <= counter <= 256:
     finalized_password = ''.join(inprogress_password)
     print(f"Here's a randomized, 10-character password (do not use after 1998): {finalized_password}")
 else:
-    print("Please try this script again, and enter a number bigger than 10 and smaller than 2^8 + 1")
+    print("Please try this script again, and enter a number bigger than 10 and smaller than 2^8")
