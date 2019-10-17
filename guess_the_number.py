@@ -22,7 +22,8 @@ number_of_times_user_guesses = 0
 last_rounds_guess = 0 # optional feature for sending absolute value clues to user
 print(f"Welcome to Guess the Number! Please choose an integer from {lowest_possible_guess} to {highest_possible_guess}!")
 while game_on == True and number_of_times_user_guesses < max_allowed_guesses:
-    print(f"\nYou have {max_allowed_guesses - number_of_times_user_guesses} guesses left, good luck!\nPsst... The secret number is:{secret_number}\n")
+    print(f"\nYou have {max_allowed_guesses - number_of_times_user_guesses} guesses left, good luck!")
+    # print(f"\nPsst... The secret number is:{secret_number}\n") <-- dev mode
     this_user_guess = int(input(f"> > > Guess a number between {lowest_possible_guess} to {highest_possible_guess} ! ! ! ")) # gotta turn the input into integer
     number_of_times_user_guesses += 1
     if this_user_guess == secret_number:
